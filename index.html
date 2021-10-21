@@ -5,9 +5,10 @@
 <p><a href="https://www.npmjs.com/package/@falkor/falkor-library" title="Visit"><img src="https://img.shields.io/github/package-json/keywords/theonethread/falkor-library" alt="Npm Keywords" title="Keywords"></a> &nbsp;
 <a href="https://www.npmjs.com/package/@falkor/falkor-library" title="Visit"><img src="https://img.shields.io/npm/v/@falkor/falkor-library" alt="Npm Package" title="Npm"></a> &nbsp;
 <a href="https://nodejs.org/" title="Visit"><img src="https://img.shields.io/node/v/@falkor/falkor-library" alt="Node Version" title="Node"></a> &nbsp;
-<a href="https://github.com/theonethread/falkor-library/actions" title="Visit"><img src="https://img.shields.io/github/workflow/status/theonethread/falkor-library/Falkor%20CI%20-%20Manual" alt="CI" title="CI"></a> &nbsp;
+<a href="https://github.com/theonethread/falkor-library/actions" title="Visit"><img src="https://img.shields.io/github/workflow/status/theonethread/falkor-library/Falkor%20CI%20-%20Release" alt="CI" title="CI"></a> &nbsp;
 <a href="https://github.com/theonethread/falkor-library" title="Visit"><img src="https://img.shields.io/github/last-commit/theonethread/falkor-library" alt="Activity" title="Activity"></a> &nbsp;
 <a href="https://www.npmjs.com/package/@falkor/falkor-bundler" title="Visit"><img src="https://img.shields.io/npm/dependency-version/@falkor/falkor-library/dev/@falkor/falkor-bundler" alt="Falkor Bundler" title="Falkor Bundler"></a> &nbsp;
+<a href="https://www.npmjs.com/package/typedoc" title="Visit"><img src="https://img.shields.io/npm/dependency-version/@falkor/falkor-library/dev/typedoc" alt="Typedoc" title="Typedoc"></a> &nbsp;
 <a href="https://www.typescriptlang.org/" title="Visit"><img src="https://img.shields.io/npm/types/@falkor/falkor-library" alt="Type Definitions" title="Typings"></a> &nbsp;
 <a href="https://snyk.io/test/github/theonethread/falkor-library" title="Visit"><img src="https://img.shields.io/snyk/vulnerabilities/github/theonethread/falkor-library" alt="Snyk Vulnerabilities" title="Snyk"></a> &nbsp;
 <a href="https://github.com/theonethread/falkor-library/blob/master/license.txt" title="Visit"><img src="https://img.shields.io/npm/l/@falkor/falkor-library" alt="License" title="MIT"></a></p>
@@ -37,51 +38,28 @@
 <p>To generate HTML documentation from the TypeScript sources under the ignored <code>.doc</code> directory using <a href="https://typedoc.org" title="Visit">Typedoc</a> run:</p>
 <pre><code><span class="hl-3">$</span><span class="hl-2"> </span><span class="hl-3">npm</span><span class="hl-2"> </span><span class="hl-3">run</span><span class="hl-2"> </span><span class="hl-3">doc</span>
 </code></pre>
-<p>Or you can visit the exported <a href="https://theonethread.github.io/falkor-library-doc" title="Visit">online documentation</a>.</p>
+<p>Or one can visit the exported <a href="https://theonethread.github.io/falkor-library-doc" title="Visit">online documentation</a>.</p>
 
-<a href="#todo" id="todo" style="color: inherit; text-decoration: none;">
-  <h3><strong>TODO</strong></h3>
+<a href="#versioning-and-branching-strategy" id="versioning-and-branching-strategy" style="color: inherit; text-decoration: none;">
+  <h3><strong>Versioning and Branching Strategy</strong></h3>
 </a>
-<ul>
-<li>Extend error handling with signals:<ul>
-<li>Recognize need of recovery on <code>SIGINT</code></li>
-</ul>
-</li>
-<li>Run failure log based recovery at startup, rather than secure graceful shutdown on error / signal<ul>
-<li>Fewer plugins to load in <code>recovery</code> mode, if explicitly requested</li>
-</ul>
-</li>
-</ul>
+<p>Release sources can be found on the <code>master</code> branch, this one always points to the latest tagged release. Previous sources of releases&#39; can be found using Git version tags (or browsing GitHub releases). Released packages can be found on <a href="https://www.npmjs.com/package/@falkor/falkor-auth-server" title="Visit">npmjs</a>.</p>
+<p>The repository&#39;s main branch is <code>develop</code> (due to technical reasons), this holds all developments that are already decided to be included in the next release. Usually this branch is ahead of master one patch version (but based on upcoming features to include this can become minor, or major), so prepared external links may yet be broken.</p>
+<p>The <code>feature/*</code> branches usually hold ideas and POC code, these will only be merged into <code>develop</code> once their impact measured and quality meets release requirements.</p>
+<blockquote>
+<p><em>The project uses <a href="https://semver.org" title="Visit">SemVer</a>, Git tags are prefixed with a <code>v</code> character.</em></p>
+</blockquote>
 
-<a href="#version-history" id="version-history" style="color: inherit; text-decoration: none;">
-  <h3><strong>Version History</strong></h3>
+<a href="#github-actions" id="github-actions" style="color: inherit; text-decoration: none;">
+  <h3><strong>GitHub Actions</strong></h3>
 </a>
-<ul>
-<li><code>development</code><ul>
-<li><a href="https://github.com/theonethread/falkor-library" title="Visit">GitHub</a></li>
-</ul>
-</li>
-<li><code>1.0.0-beta.2</code><ul>
-<li><a href="https://www.npmjs.com/package/@falkor/falkor-library/v/1.0.0-beta.2" title="Visit">npmjs</a></li>
-<li><a href="https://github.com/theonethread/falkor-library/releases/tag/v1.0.0-beta.2" title="Visit">GitHub</a></li>
-</ul>
-</li>
-<li><code>1.0.0-beta.1</code><ul>
-<li><a href="https://www.npmjs.com/package/@falkor/falkor-library/v/1.0.0-beta.1" title="Visit">npmjs</a></li>
-<li><a href="https://github.com/theonethread/falkor-library/releases/tag/v1.0.0-beta.1" title="Visit">GitHub</a></li>
-</ul>
-</li>
-<li><code>1.0.0-beta.0</code><ul>
-<li><a href="https://www.npmjs.com/package/@falkor/falkor-library/v/1.0.0-beta.0" title="Visit">npmjs</a></li>
-<li><a href="https://github.com/theonethread/falkor-library/releases/tag/v1.0.0-beta.0" title="Visit">GitHub</a></li>
-</ul>
-</li>
-</ul>
+<p>Automatic builds are achieved via GitHub actions, CI will make nightly builds of the <code>develop</code> branch (using Ubuntu image), and thoroughly test <code>master</code> when there is a pull request, or commit on it (using Ubuntu - Win - MacOS image matrix). The workflows can be found <a href="https://github.com/theonethread/falkor-auth-server/blob/develop/.github/workflows" title="Open">here</a>.</p>
+<p>There is also a manually triggered workflow, that deploys generated documentation to <a href="https://theonethread.github.io/falkor-library-doc" title="Visit">GitHub Pages</a>.</p>
 
 <a href="#open-source" id="open-source" style="color: inherit; text-decoration: none;">
   <h3><strong>Open Source</strong></h3>
 </a>
-<p>You can always find the latest sources on <a href="https://github.com/theonethread/falkor-library" title="Visit">GitHub</a>.</p>
+<p>The latest sources can always be found on <a href="https://github.com/theonethread/falkor-library" title="Visit">GitHub</a>.</p>
 
 <a href="#license" id="license" style="color: inherit; text-decoration: none;">
   <h3><strong>License</strong></h3>
